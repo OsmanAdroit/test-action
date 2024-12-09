@@ -15,7 +15,8 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
-      - name: printing github workspace -> {{github.workspace}}
+      - name: printing github workspace
+        run: github workspace -> {{github.workspace}}
       # Runs a single command using the runners shell
       - name: List files in the repository
         run: ls {{github.workspace}}
